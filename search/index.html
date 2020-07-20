@@ -12,28 +12,28 @@
     
     
     
-    <title>search | Hexo Test</title>
+    <title>search | Relative Links True</title>
     <link href="audinot.github.io/hexo-test" rel="prefetch" />
 
     
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/aos.css">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/aos.css">
+<link rel="stylesheet" href="../css/style.css">
 
     
-<script src="js/jquery.min.js"></script>
+<script src="../js/jquery.min.js"></script>
 
     
-<script src="js/bootstrap.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 
     
-<script src="js/aos.js"></script>
+<script src="../js/aos.js"></script>
 
     
-<script src="js/highslide/highslide-full.min.js"></script>
+<script src="../js/highslide/highslide-full.min.js"></script>
 
     
-<link rel="stylesheet" href="js/highslide/highslide.css">
+<link rel="stylesheet" href="../js/highslide/highslide.css">
 
     <style type="text/css">
         @media (max-width: 768px) {
@@ -48,16 +48,17 @@
     <!--<script type="text/javascript">
       if (document.images) {
         var avatar = new Image();
-        avatar.src = 'imgs/avatar.jpg'
+        avatar.src = '../imgs/avatar.jpg'
         var previews = 'preview1.jpg,preview2.jpg,preview3.jpg,preview4.jpg'.split(',')
         var previewsPreLoad = []
         for(var i = 0; i < length; i++) {
           previewsPreLoad.push(new Image())
-          previewsPreLoad[previewsPreLoad.length - 1].src = 'imgs/preview' + previews[i]
+          previewsPreLoad[previewsPreLoad.length - 1].src = '../imgs/preview' + previews[i]
         }
       }
     </script>-->
 <meta name="generator" content="Hexo 4.2.1"></head>
+
 <body>
     <!-- 背景轮播图功能 -->
     <section class="hidden-xs">
@@ -93,7 +94,7 @@
                     }
                 </style>
                 <!-- 这里使用文字(navbar_text or config.title) -->
-                <div class="navbar-brand">Hexo Test</div>
+                <div class="navbar-brand">Relative Links True</div>
                 
             </a>
         </div>
@@ -102,7 +103,7 @@
                 
                 
                 <li class="">
-                    <a href="/">
+                    <a href="../index.html">
                         <i class="fa fa-home"></i>首页
                     </a>
                 </li>
@@ -110,7 +111,7 @@
                 
                 
                 <li class="">
-                    <a href="archives">
+                    <a href="../archives">
                         <i class="fa fa-archive"></i>归档
                     </a>
                 </li>
@@ -119,7 +120,7 @@
                 
                 
                 <li class="">
-                    <a href="categories">
+                    <a href="../categories">
                         <i class="fa fa-list"></i>分类
                     </a>
                 </li>
@@ -129,7 +130,7 @@
                 
                 
                 <li class="">
-                    <a href="tags">
+                    <a href="../tags">
                         <i class="fa fa-tags"></i>标签
                     </a>
                 </li>
@@ -138,7 +139,7 @@
                 
                 
                 <li class="">
-                    <a href="about">
+                    <a href="../about">
                         <i class="fa fa-user"></i>关于我
                     </a>
                 </li>
@@ -185,7 +186,7 @@
     var pageSize = '10'
     var useLeancloud = ''
     var useComment = ('false' === 'true')
-    $.getJSON('content.json', function (json) {
+    $.getJSON('../content.json', function (json) {
       $('#search-breadcrumb').append(`搜索'${s}'的结果`)
       var result = getArticles(s, 'posts', json).concat(getArticles(s, 'pages', json))
       if (result.length === 0 || result.length <= (p - 1) * pageSize) {
@@ -208,7 +209,7 @@
       	var [month, day] = article.date.split('-')
         ''
         ''
-        var defaultPreview = 'imgs/preview/preview2.jpg'
+        var defaultPreview = '../imgs/preview/preview1.jpg'
         var preview = article.preview ? article.preview : defaultPreview
         var path = '/hexo-test/' + article.path
         resultList.append(`<div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
@@ -262,7 +263,7 @@
         pgContainer.css('display', 'block')
       }
       var num = Math.ceil(result.length / pageSize)
-      var root = '/search'
+      var root = '../search'
       var link = root + `/index.html?s=${s}`
       if(p > 1) {
       	pg.append(`<li class="prev"><a href="${link}&page=${p-1}">«</a></li>`)
@@ -368,7 +369,7 @@
 <aside id="sidebar-search">
     <div class="search hidden-xs" data-aos="fade-up" data-aos-duration="2000">
         <form class="form-inline clearfix" id="search-form" method="get"
-              action="/search/index.html">
+              action="../search/index.html">
             <input type="text" name="s" class="form-control" id="searchInput" placeholder="搜索文章~" autocomplete="off">
             <button class="btn btn-danger btn-gal" type="submit">
                 <i class="fa fa-search"></i>
@@ -384,7 +385,7 @@
             <i class="fa fa-quote-right"></i>
         </div>
         <div class="author-panel text-center">
-            <img src="imgs/avatar.jpg" width="140" height="140"
+            <img src="../imgs/avatar.jpg" width="140" height="140"
                  alt="个人头像" class="author-image">
             <p class="author-description"><p>This is my description test.</p>
 </p>
@@ -419,13 +420,13 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="2020/07/20/hello-world/">Hello World</a>
+                    <a href="../2020/07/20/hello-world/">Hello World</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="2020/07/20/first-post/">First Post</a>
+                    <a href="../2020/07/20/first-post/">First Post</a>
                 </span>
             </li>
             
@@ -447,13 +448,13 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="2020/07/20/first-post/">First Post</a>
+                    <a href="../2020/07/20/hello-world/">Hello World</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="2020/07/20/hello-world/">Hello World</a>
+                    <a href="../2020/07/20/first-post/">First Post</a>
                 </span>
             </li>
             
@@ -468,17 +469,17 @@
 
                 
                 <li>
-                    <a href="search/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="search/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="search/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
@@ -542,7 +543,7 @@
 </div>
 </body>
 
-<script src="js/activate-power-mode.js"></script>
+<script src="../js/activate-power-mode.js"></script>
 
 <script>
 
@@ -585,14 +586,14 @@
 </script>
 <script>
     window.slideConfig = {
-      prefix: 'imgs/slide/background',
+      prefix: '../imgs/slide/background',
       ext: 'jpg',
       maxCount: '6'
     }
 </script>
 
-<script src="js/hs.js"></script>
-<script src="js/blog.js"></script>
+<script src="../js/hs.js"></script>
+<script src="../js/blog.js"></script>
 
 
 
