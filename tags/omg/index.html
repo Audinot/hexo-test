@@ -5,38 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Katherine">
     
-    <meta name="description" content="This is my description test.">
+    <meta name="description" content="We are two violinists.">
     
     
     
     
     
     
-    <title>First Post | Post Asset~</title>
+    <title>tags: omg | Our Name~</title>
     <link href="/hexo-test/" rel="prefetch" />
 
     
-<link rel="stylesheet" href="../../../../css/bootstrap.min.css">
-<link rel="stylesheet" href="../../../../css/aos.css">
-<link rel="stylesheet" href="../../../../css/style.css">
+<link rel="stylesheet" href="../../css/bootstrap.min.css">
+<link rel="stylesheet" href="../../css/aos.css">
+<link rel="stylesheet" href="../../css/style.css">
 
     
-<script src="../../../../js/jquery.min.js"></script>
+<script src="../../js/jquery.min.js"></script>
 
     
-<script src="../../../../js/bootstrap.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
 
     
-<script src="../../../../js/aos.js"></script>
+<script src="../../js/aos.js"></script>
 
     
-<script src="../../../../js/highslide/highslide-full.min.js"></script>
+<script src="../../js/highslide/highslide-full.min.js"></script>
 
     
-<link rel="stylesheet" href="../../../../js/highslide/highslide.css">
+<link rel="stylesheet" href="../../js/highslide/highslide.css">
 
 
-    <!-- added font-awesome manually -->
+    <!-- Cormorant Garamond and Fira Sans from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:700i|Fira+Sans" rel="stylesheet">
+
+    <!-- added font-awesome manually, this worked better than original theme link -->
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -53,12 +56,12 @@
     <!--<script type="text/javascript">
       if (document.images) {
         var avatar = new Image();
-        avatar.src = '../../../../imgs/avatar.jpg'
-        var previews = 'preview2.jpg,preview4.jpg'.split(',')
+        avatar.src = '../../imgs/avatar.jpg'
+        var previews = 'preview1.jpg,preview2.jpg,preview3.jpg,preview4.jpg'.split(',')
         var previewsPreLoad = []
         for(var i = 0; i < length; i++) {
           previewsPreLoad.push(new Image())
-          previewsPreLoad[previewsPreLoad.length - 1].src = '../../../../imgs/preview' + previews[i]
+          previewsPreLoad[previewsPreLoad.length - 1].src = '../../imgs/preview' + previews[i]
         }
       }
     </script>-->
@@ -100,7 +103,7 @@
                     }
                 </style>
                 <!-- 这里使用文字(navbar_text or config.title) -->
-                <div class="navbar-brand">Post Asset~</div>
+                <div class="navbar-brand">Our Name~</div>
                 
             </a>
         </div>
@@ -109,7 +112,7 @@
                 
                 
                 <li class="">
-                    <a href="../../../../index.html">
+                    <a href="../../index.html">
                         <i class="fa fa-home"></i>~Home
                     </a>
                 </li>
@@ -117,7 +120,7 @@
                 
                 
                 <li class="">
-                    <a href="../../../../archives">
+                    <a href="../../archives">
                         <i class="fa fa-archive"></i>~Archives
                     </a>
                 </li>
@@ -125,27 +128,75 @@
                 
                 
                 
-                <li class="">
-                    <a href="../../../../categories">
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
                         <i class="fa fa-list"></i>~Categories
                     </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="../../categories/Random/">Random</a>
+                        </li>
+                        
+                        <li>
+                            <a href="../../categories/Music/">Music</a>
+                        </li>
+                        
+                        <li>
+                            <a href="../../categories/Random/Article/">Article</a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="../../categories">...</a>
+                        </li>
+                        
+                        
+                    </ul>
                 </li>
                 
                 
                 
                 
                 
-                <li class="">
-                    <a href="../../../../tags">
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
                         <i class="fa fa-tags"></i>~Tags
                     </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="../random/">random</a>
+                        </li>
+                        
+                        <li>
+                            <a href="">omg</a>
+                        </li>
+                        
+                        <li>
+                            <a href="../nothing/">nothing</a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="..">...</a>
+                        </li>
+                        
+                        
+                    </ul>
                 </li>
                 
                 
                 
                 
                 <li class="">
-                    <a href="../../../../about">
+                    <a href="../../about">
                         <i class="fa fa-user"></i>~About
                     </a>
                 </li>
@@ -160,27 +211,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
-                    
-<article class="article well article-body" id="article">
+                    <article class="article well article-body" id="article-tag">
     <div class="breadcrumb">
         <i class="fa fa-home"></i>
-        <a href="/hexo-test/">Post Asset~</a>
+        <a href="/hexo-test/">Our Name~</a>
         >
-        <span>First Post</span>
+        <span>Tag</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="">First Post</a>
+                <a href="">omg</a>
             </h1>
-        </div>
-        <div class="tag-article">
-            
-            <span class="label label-gal">
-                <i class="fa fa-calendar"></i> 2020-07-20
-            </span>
-            
         </div>
     </div>
     <!-- 小型设备详细文章 -->
@@ -188,25 +231,21 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="">First Post</a>
+                    <a href="">omg</a>
                 </h4>
             </div>
-            <p>
-                <i class="fa fa-calendar"></i> 2020-07-20
-            </p>
-            <p>
-                
-                
-            </p>
         </center>
     </div>
-    <div class="content-article">
-        <p>This is my new first post.</p>
-
+    <div class="content-article" style="margin-top: 30px;">
+        <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
+            
+            <a href="../../2020/07/19/Datejust/">Datejust</a>
+            <br>
+            
+            
+        </div>
     </div>
 </article>
-
-
 
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
@@ -222,9 +261,9 @@
             <i class="fa fa-quote-right"></i>
         </div>
         <div class="author-panel text-center">
-            <img src="../../../../imgs/avatar.jpg" width="140" height="140"
+            <img src="../../imgs/avatar.jpg" width="140" height="140"
                  alt="It's us" class="author-image">
-            <p class="author-description"><p>This is my description test.</p>
+            <p class="author-description"><p>We are two violinists.</p>
 </p>
         </div>
     </div>
@@ -246,13 +285,25 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="../hello-world/">Hello World</a>
+                    <a href="../../2020/07/20/Try-Music/">Try Music</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="">First Post</a>
+                    <a href="../../2020/07/19/Datejust/">Datejust</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="../../2020/07/19/hello-world/">Hello World</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="../../2020/07/18/first-post/">First Post</a>
                 </span>
             </li>
             
@@ -275,13 +326,25 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="../hello-world/">Hello World</a>
+                    <a href="../../2020/07/19/Datejust/">Datejust</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="">First Post</a>
+                    <a href="../../2020/07/20/Try-Music/">Try Music</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="../../2020/07/19/hello-world/">Hello World</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="../../2020/07/18/first-post/">First Post</a>
                 </span>
             </li>
             
@@ -314,6 +377,18 @@
             <div class="tab-content">
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
+    
+    <a href="../random/" style="font-size: 16.298031547692293px;" class="tag-cloud-link">random</a>
+    
+    <a href="" style="font-size: 11.61674986092357px;" class="tag-cloud-link">omg</a>
+    
+    <a href="../nothing/" style="font-size: 17.19490062515969px;" class="tag-cloud-link">nothing</a>
+    
+    <a href="../test/" style="font-size: 14.924265479030161px;" class="tag-cloud-link">test</a>
+    
+    <a href="../song/" style="font-size: 14.472261585706612px;" class="tag-cloud-link">song</a>
+    
+    <a href="../first/" style="font-size: 13.138839888555992px;" class="tag-cloud-link">first</a>
     
 </div>
                 
@@ -374,7 +449,7 @@
 
 </body>
 
-<script src="../../../../js/activate-power-mode.js"></script>
+<script src="../../js/activate-power-mode.js"></script>
 
 <script>
 
@@ -417,14 +492,14 @@
 </script>
 <script>
     window.slideConfig = {
-      prefix: '../../../../imgs/slide/background',
+      prefix: '../../imgs/slide/background',
       ext: 'jpg',
       maxCount: '6'
     }
 </script>
 
-<script src="../../../../js/hs.js"></script>
-<script src="../../../../js/blog.js"></script>
+<script src="../../js/hs.js"></script>
+<script src="../../js/blog.js"></script>
 
 
 

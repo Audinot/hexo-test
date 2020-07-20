@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Katherine">
     
-    <meta name="description" content="This is my description test.">
+    <meta name="description" content="We are two violinists.">
     
     
     
     
     
     
-    <title>404 | Post Asset~</title>
+    <title>404 | Our Name~</title>
     <link href="/hexo-test/" rel="prefetch" />
 
     
@@ -36,7 +36,10 @@
 <link rel="stylesheet" href="../js/highslide/highslide.css">
 
 
-    <!-- added font-awesome manually -->
+    <!-- Cormorant Garamond and Fira Sans from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:700i|Fira+Sans" rel="stylesheet">
+
+    <!-- added font-awesome manually, this worked better than original theme link -->
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -54,7 +57,7 @@
       if (document.images) {
         var avatar = new Image();
         avatar.src = '../imgs/avatar.jpg'
-        var previews = 'preview2.jpg,preview4.jpg'.split(',')
+        var previews = 'preview1.jpg,preview2.jpg,preview3.jpg,preview4.jpg'.split(',')
         var previewsPreLoad = []
         for(var i = 0; i < length; i++) {
           previewsPreLoad.push(new Image())
@@ -100,7 +103,7 @@
                     }
                 </style>
                 <!-- 这里使用文字(navbar_text or config.title) -->
-                <div class="navbar-brand">Post Asset~</div>
+                <div class="navbar-brand">Our Name~</div>
                 
             </a>
         </div>
@@ -125,20 +128,68 @@
                 
                 
                 
-                <li class="">
-                    <a href="../categories">
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
                         <i class="fa fa-list"></i>~Categories
                     </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="../categories/Random/">Random</a>
+                        </li>
+                        
+                        <li>
+                            <a href="../categories/Music/">Music</a>
+                        </li>
+                        
+                        <li>
+                            <a href="../categories/Random/Article/">Article</a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="../categories">...</a>
+                        </li>
+                        
+                        
+                    </ul>
                 </li>
                 
                 
                 
                 
                 
-                <li class="">
-                    <a href="../tags">
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
                         <i class="fa fa-tags"></i>~Tags
                     </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="../tags/random/">random</a>
+                        </li>
+                        
+                        <li>
+                            <a href="../tags/omg/">omg</a>
+                        </li>
+                        
+                        <li>
+                            <a href="../tags/nothing/">nothing</a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="../tags">...</a>
+                        </li>
+                        
+                        
+                    </ul>
                 </li>
                 
                 
@@ -181,7 +232,7 @@
         <div class="author-panel text-center">
             <img src="../imgs/avatar.jpg" width="140" height="140"
                  alt="It's us" class="author-image">
-            <p class="author-description"><p>This is my description test.</p>
+            <p class="author-description"><p>We are two violinists.</p>
 </p>
         </div>
     </div>
@@ -203,13 +254,25 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="../2020/07/20/hello-world/">Hello World</a>
+                    <a href="../2020/07/20/Try-Music/">Try Music</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="../2020/07/20/first-post/">First Post</a>
+                    <a href="../2020/07/19/Datejust/">Datejust</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="../2020/07/19/hello-world/">Hello World</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="../2020/07/18/first-post/">First Post</a>
                 </span>
             </li>
             
@@ -232,13 +295,25 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="../2020/07/20/hello-world/">Hello World</a>
+                    <a href="../2020/07/19/Datejust/">Datejust</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="../2020/07/20/first-post/">First Post</a>
+                    <a href="../2020/07/20/Try-Music/">Try Music</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="../2020/07/19/hello-world/">Hello World</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="../2020/07/18/first-post/">First Post</a>
                 </span>
             </li>
             
@@ -271,6 +346,18 @@
             <div class="tab-content">
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
+    
+    <a href="../tags/random/" style="font-size: 15.832115610711558px;" class="tag-cloud-link">random</a>
+    
+    <a href="../tags/omg/" style="font-size: 11.913730090389212px;" class="tag-cloud-link">omg</a>
+    
+    <a href="../tags/nothing/" style="font-size: 8.211049540998745px;" class="tag-cloud-link">nothing</a>
+    
+    <a href="../tags/test/" style="font-size: 11.537305253117555px;" class="tag-cloud-link">test</a>
+    
+    <a href="../tags/song/" style="font-size: 17.857379965399332px;" class="tag-cloud-link">song</a>
+    
+    <a href="../tags/first/" style="font-size: 9.065137445055015px;" class="tag-cloud-link">first</a>
     
 </div>
                 
